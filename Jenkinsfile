@@ -11,5 +11,15 @@ pipeline{
                 sh 'echo "My stage 2"'
             }
         }
+        stage('Third Stage'){
+            steps{
+                sh 'echo "My stage 3"'
+            }
+        }
+        stage('Fourth Stage'){
+            steps{
+                sh 'echo "My final stage"'
+            }
+        }
     }
 }
